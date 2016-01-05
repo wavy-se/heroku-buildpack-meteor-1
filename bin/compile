@@ -41,7 +41,7 @@ APP_SOURCE_DIR="$APP_CHECKOUT_DIR"
 # Meteor app in /app/ instead of in the root. So let's try the /app/ folder if
 # there is no Meteor app in the root.
 if [ ! -d "$APP_SOURCE_DIR/.meteor" ] && [ -d "$APP_SOURCE_DIR/app/.meteor" ]; then
-    APP_SOURCE_DIR="$APP_SOURCE_DIR/app/"
+    APP_SOURCE_DIR="$APP_SOURCE_DIR/app/kundapp/"
 fi
 # Where we will install meteor. Has to be outside the APP_CHECKOUT_DIR.
 METEOR_DIR=`mktemp -d "$BUILDPACK_DIR"/meteor-XXXX`
